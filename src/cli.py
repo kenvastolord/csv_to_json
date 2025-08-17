@@ -10,8 +10,17 @@ def main():
 
     parser.add_argument("output_file", type=str, help="Path to the output JSON file.")
 
+    parser.add_argument(
+        "--delimiter", type=str, default=",", help="CSV delimiter (default is ',')"
+    )
+
     args = parser.parse_args()
-    convert_csv_to_json(args.input_file, args.output_file)
+
+    convert_csv_to_json(
+        input_file=args.input_file,
+        output_file=args.output_file,
+        delimiter=args.delimiter,
+    )
 
 
 if __name__ == "__main__":
