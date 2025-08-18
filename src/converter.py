@@ -11,9 +11,12 @@ def convert_csv_to_json(input_file, output_file, delimiter=","):
             json.dump(data, json_file, indent=2)
 
         print(f" Successfully converted '{input_file}' to '{output_file}'")
+        return True
 
     except FileNotFoundError:
         print(f" Error: The file {input_file} was not found.")
+        return False
 
     except Exception as e:
         print(f"An Error occurred {e}")
+        return False
