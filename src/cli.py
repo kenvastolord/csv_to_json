@@ -1,6 +1,6 @@
 import argparse
 
-from converter import convert_csv_to_json
+from src.converter import convert_csv_to_json
 
 
 def main():
