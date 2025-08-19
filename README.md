@@ -39,4 +39,4 @@ python convert.py <path_to_csv> <path_to_json> [--delimiter ";"]
 
 ## Screenshots
 
-![Screenshot ](.screenshots/csv_to_json.gif)
+![Screenshot ](screenshots/csv_to_json.gif)
